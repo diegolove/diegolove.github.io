@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="Solis Beverages packaging">
+  <rect width="1200" height="900" fill="#f5f4f0"/>
+  <g transform="translate(180 100)">
+    <rect width="180" height="640" rx="24" fill="#0e0e0e"/>
+    <rect x="20" y="240" width="140" height="200" fill="#c8ff3d"/>
+    <text x="90" y="360" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="32" font-weight="600" fill="#0e0e0e">SOLIS</text>
+  </g>
+  <g transform="translate(420 100)">
+    <rect width="180" height="640" rx="24" fill="#c8ff3d"/>
+    <rect x="20" y="240" width="140" height="200" fill="#0e0e0e"/>
+    <text x="90" y="360" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="32" font-weight="600" fill="#c8ff3d">SOLIS</text>
+  </g>
+  <g transform="translate(660 100)">
+    <rect width="180" height="640" rx="24" fill="#ecebe6" stroke="#0e0e0e"/>
+    <rect x="20" y="240" width="140" height="200" fill="#0e0e0e"/>
+    <text x="90" y="360" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="32" font-weight="600" fill="#c8ff3d">SOLIS</text>
+  </g>
+  <g transform="translate(900 280)" font-family="Bricolage Grotesque, sans-serif" fill="#0e0e0e">
+    <text font-size="48" font-weight="500" letter-spacing="-1">Solis</text>
+    <text y="46" font-size="18" font-family="Geist Mono, monospace" letter-spacing="2" fill="#6b6b66">PACKAGING SYSTEM</text>
+    <text y="100" font-family="Geist, sans-serif" font-size="16" fill="#6b6b66">A 12-SKU sparkling line.</text>
+  </g>
+  <text x="1160" y="860" text-anchor="end" font-family="Geist Mono, monospace" font-size="13" letter-spacing="2" fill="#6b6b66">H.08</text>
+</svg>

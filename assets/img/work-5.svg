@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="Lumen Studio film identity">
+  <defs>
+    <radialGradient id="rg1" cx="0.5" cy="0.5" r="0.6">
+      <stop offset="0" stop-color="#c8ff3d" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#0e0e0e" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="900" fill="#0e0e0e"/>
+  <ellipse cx="600" cy="450" rx="520" ry="280" fill="url(#rg1)"/>
+  <g transform="translate(600 480)" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" fill="#f5f4f0">
+    <text font-size="170" font-weight="500" letter-spacing="-7">LUMEN</text>
+    <text y="80" font-size="22" letter-spacing="8" fill="#c8ff3d">A FILM &amp; MOTION COMPANY</text>
+  </g>
+  <g font-family="Geist Mono, monospace" font-size="13" fill="#8b8a85" letter-spacing="2">
+    <text x="40" y="60">E.05</text>
+    <text x="1160" y="60" text-anchor="end">2024 / Q4</text>
+    <text x="40" y="860">FILM · MOTION · IDENTITY</text>
+  </g>
+</svg>

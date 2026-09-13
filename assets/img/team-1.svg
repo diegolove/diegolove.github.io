@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="600" height="750" role="img" aria-label="Founder portrait placeholder">
+  <defs><linearGradient id="t1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a1a17"/><stop offset="1" stop-color="#0e0e0e"/></linearGradient></defs>
+  <rect width="600" height="750" fill="url(#t1)"/>
+  <circle cx="300" cy="300" r="120" fill="#2a2a28"/>
+  <ellipse cx="300" cy="640" rx="200" ry="180" fill="#2a2a28"/>
+  <text x="300" y="700" text-anchor="middle" font-family="Geist Mono, monospace" font-size="16" fill="#c8ff3d" letter-spacing="3">PORTRAIT · 600×750</text>
+</svg>

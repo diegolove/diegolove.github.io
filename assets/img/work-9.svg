@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="Mercantile finance fintech identity">
+  <rect width="1200" height="900" fill="#0e0e0e"/>
+  <g font-family="Bricolage Grotesque, sans-serif">
+    <text x="600" y="380" text-anchor="middle" font-size="180" font-weight="500" letter-spacing="-7" fill="#f5f4f0">Mercantile</text>
+    <text x="600" y="490" text-anchor="middle" font-size="60" font-weight="400" letter-spacing="-2" font-style="italic" fill="#c8ff3d">a private bank</text>
+  </g>
+  <line x1="80" y1="600" x2="1120" y2="600" stroke="#c8ff3d" opacity="0.4"/>
+  <g font-family="Geist Mono, monospace" font-size="13" fill="#8b8a85" letter-spacing="2">
+    <text x="80" y="660">EST. 2025 · BROOKLYN, NY</text>
+    <text x="1120" y="660" text-anchor="end">DIGITAL · BRAND · PRODUCT</text>
+    <text x="80" y="860">I.09</text>
+    <text x="1120" y="860" text-anchor="end">2026 / Q1</text>
+  </g>
+</svg>
