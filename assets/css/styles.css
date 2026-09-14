@@ -1,6 +1,6 @@
 /* =========================================================
    Axioma — creative agency template
-   Editorial swiss agency, monochrome + electric lime accent.
+   Editorial swiss agency, monochrome + electric periwinkle accent.
    Composition J: left-pinned logo/nav + right scroll panels.
    Bricolage Grotesque (display) + Geist (body), tokenized vanilla CSS.
    ========================================================= */
@@ -15,8 +15,8 @@
   --ink-dim: #6b6b66;
   --ink-line: #cfcec7;
   --line-soft: #e3e2dc;
-  --lime: #c8ff3d;
-  --lime-deep: #a3d130;
+  --periwinkle: #BE93D4;
+  --mauve: #7A4988;
   --surface-dark: #0e0e0e;
   --surface-dark-2: #1a1a17;
   --paper-on-dark: #f5f4f0;
@@ -89,7 +89,7 @@ h1 { font-size: var(--size-h1); }
 h2 { font-size: var(--size-h2); }
 h3 { font-size: var(--size-h3); line-height: 1.2; letter-spacing: -0.01em; }
 p { margin: 0 0 1em; }
-::selection { background: var(--lime); color: var(--ink); }
+::selection { background: var(--periwinkle); color: var(--ink); }
 
 .eyebrow {
   font-family: var(--mono), var(--sans);
@@ -99,7 +99,7 @@ p { margin: 0 0 1em; }
   color: var(--ink-dim);
   font-weight: 500;
 }
-.eyebrow .dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--lime); margin-right: 8px; vertical-align: 2px; }
+.eyebrow .dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--periwinkle); margin-right: 8px; vertical-align: 2px; }
 
 .italic { font-style: italic; font-family: 'Geist', serif; }
 em.italic-display { font-family: var(--display); font-style: italic; font-weight: 400; }
@@ -133,7 +133,7 @@ em.italic-display { font-family: var(--display); font-style: italic; font-weight
 .rail-brand-mark {
   width: 26px; height: 26px;
   background: var(--ink);
-  color: var(--lime);
+  color: var(--periwinkle);
   display: grid; place-items: center;
   font-family: var(--mono);
   font-size: 0.78rem;
@@ -176,7 +176,7 @@ em.italic-display { font-family: var(--display); font-style: italic; font-weight
 .rail-nav a.active { color: var(--ink); }
 .rail-nav a.active::after {
   content: ""; position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
-  width: 6px; height: 6px; background: var(--lime); border-radius: 50%;
+  width: 6px; height: 6px; background: var(--periwinkle); border-radius: 50%;
 }
 
 .rail-foot {
@@ -208,7 +208,7 @@ em.italic-display { font-family: var(--display); font-style: italic; font-weight
 .topbar .brand { font-family: var(--display); font-weight: 600; color: var(--ink); display: flex; align-items: center; gap: 8px; }
 .menu-toggle {
   display: inline-flex; flex-direction: column; gap: 4px;
-  background: var(--ink); color: var(--lime);
+  background: var(--ink); color: var(--periwinkle);
   padding: 10px 14px; border: 0; border-radius: var(--radius-sm);
   font-family: var(--mono); font-size: 0.8rem; cursor: pointer;
 }
@@ -223,7 +223,7 @@ em.italic-display { font-family: var(--display); font-style: italic; font-weight
 }
 .mobile-nav.open { display: flex; }
 .mobile-nav a { padding: 14px 0; border-bottom: 1px solid #2a2a28; }
-.mobile-nav a:hover { color: var(--lime); }
+.mobile-nav a:hover { color: var(--periwinkle); }
 .mobile-close {
   position: absolute; top: 18px; right: 18px;
   background: transparent; color: var(--paper-on-dark); border: 0;
@@ -248,13 +248,13 @@ em.italic-display { font-family: var(--display); font-style: italic; font-weight
 .btn .arrow { transition: transform 0.25s var(--ease); }
 .btn:hover .arrow { transform: translateX(4px); }
 .btn-ink { background: var(--ink); color: var(--paper); }
-.btn-ink:hover { background: var(--lime); color: var(--ink); }
-.btn-lime { background: var(--lime); color: var(--ink); }
-.btn-lime:hover { background: var(--ink); color: var(--lime); }
+.btn-ink:hover { background: var(--periwinkle); color: var(--ink); }
+.btn-periwinkle { background: var(--periwinkle); color: var(--ink); }
+.btn-periwinkle:hover { background: var(--ink); color: var(--periwinkle); }
 .btn-ghost { background: transparent; color: var(--ink); border-color: var(--ink); }
 .btn-ghost:hover { background: var(--ink); color: var(--paper); }
 .btn-ghost-light { background: transparent; color: var(--paper-on-dark); border-color: var(--paper-on-dark); }
-.btn-ghost-light:hover { background: var(--lime); color: var(--ink); border-color: var(--lime); }
+.btn-ghost-light:hover { background: var(--periwinkle); color: var(--ink); border-color: var(--periwinkle); }
 
 /* ─── sections ─── */
 section { padding: var(--pad-section) var(--pad-x); position: relative; }
@@ -293,7 +293,7 @@ section { padding: var(--pad-section) var(--pad-x); position: relative; }
   padding-bottom: 18px;
   margin-bottom: clamp(50px, 7vw, 100px);
 }
-.hero-meta .lime-tag { background: var(--lime); color: var(--ink); padding: 4px 10px; border-radius: var(--radius-pill); letter-spacing: 0.08em; }
+.hero-meta .periwinkle-tag { background: var(--periwinkle); color: var(--ink); padding: 4px 10px; border-radius: var(--radius-pill); letter-spacing: 0.08em; }
 
 .hero-headline {
   font-size: var(--size-hero);
@@ -309,11 +309,11 @@ section { padding: var(--pad-section) var(--pad-x); position: relative; }
 }
 .hero-headline .strike::after {
   content: ""; position: absolute; left: 0; right: 0; top: 50%;
-  border-top: 6px solid var(--lime);
+  border-top: 6px solid var(--periwinkle);
   transform: rotate(-2deg);
 }
-.hero-headline .lime-block {
-  background: var(--lime);
+.hero-headline .periwinkle-block {
+  background: var(--periwinkle);
   padding: 0 0.16em;
   display: inline-block;
 }
@@ -344,7 +344,7 @@ section { padding: var(--pad-section) var(--pad-x); position: relative; }
 }
 .hero-marquee .marquee-track span { display: inline-flex; align-items: center; gap: 36px; }
 .hero-marquee .marquee-track span::after {
-  content: "✦"; color: var(--lime); font-size: 0.7em; vertical-align: 0.2em;
+  content: "✦"; color: var(--periwinkle); font-size: 0.7em; vertical-align: 0.2em;
 }
 @keyframes marq { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
@@ -376,7 +376,7 @@ section { padding: var(--pad-section) var(--pad-x); position: relative; }
   font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase;
   color: var(--ink); display: inline-flex; align-items: center; gap: 8px;
 }
-.work-card .body .arrow-link:hover { color: var(--lime-deep); }
+.work-card .body .arrow-link:hover { color: var(--mauve); font-weight: 600; }
 
 /* ─── services list (numbered, NOT card grid) ─── */
 .services-list { border-top: 1px solid var(--ink); }
@@ -404,7 +404,7 @@ section { padding: var(--pad-section) var(--pad-x); position: relative; }
 .services-list .row .arrow {
   font-size: 1.4rem; color: var(--ink); transition: transform 0.3s var(--ease), color 0.3s var(--ease);
 }
-.services-list .row:hover .arrow { transform: rotate(-45deg); color: var(--lime-deep); }
+.services-list .row:hover .arrow { transform: rotate(-45deg); color: var(--periwinkle); }
 
 /* ─── client logos marquee ─── */
 .clients-marquee {
@@ -436,7 +436,7 @@ section { padding: var(--pad-section) var(--pad-x); position: relative; }
   display: grid; grid-template-columns: 1fr 2fr; gap: 80px;
   align-items: start;
 }
-.manifesto .label { font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--lime); }
+.manifesto .label { font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--periwinkle); }
 .manifesto h2 {
   font-size: clamp(2rem, 3.4vw, 3.4rem);
   line-height: 1.06;
@@ -445,7 +445,7 @@ section { padding: var(--pad-section) var(--pad-x); position: relative; }
   letter-spacing: -0.02em;
   max-width: 22ch;
 }
-.manifesto h2 .lime-text { color: var(--lime); font-style: italic; font-family: var(--display); }
+.manifesto h2 .periwinkle-text { color: var(--periwinkle); font-style: italic; font-family: var(--display); }
 .manifesto p { color: #c8c7c2; font-size: 1.1rem; max-width: 56ch; }
 .manifesto .signature {
   margin-top: 48px; padding-top: 24px; border-top: 1px solid #2a2a27;
@@ -457,7 +457,7 @@ section { padding: var(--pad-section) var(--pad-x); position: relative; }
 /* ─── closing CTA ─── */
 .cta-band {
   padding: clamp(80px, 9vw, 140px) var(--pad-x);
-  background: var(--lime);
+  background: var(--periwinkle);
   color: var(--ink);
   position: relative;
   overflow: hidden;
@@ -498,7 +498,7 @@ section { padding: var(--pad-section) var(--pad-x); position: relative; }
   color: var(--paper-on-dark); display: flex; align-items: center; gap: 10px;
 }
 .site-footer .brand-block .mark .badge {
-  width: 28px; height: 28px; background: var(--lime); color: var(--ink);
+  width: 28px; height: 28px; background: var(--periwinkle); color: var(--ink);
   display: grid; place-items: center; font-family: var(--mono); font-size: 0.76rem; font-weight: 600;
   border-radius: var(--radius-sm);
 }
@@ -507,7 +507,7 @@ section { padding: var(--pad-section) var(--pad-x); position: relative; }
   color: var(--paper-on-dark); margin-bottom: 14px; font-weight: 500;
 }
 .site-footer .col a { display: block; padding: 5px 0; color: #b0afaa; }
-.site-footer .col a:hover { color: var(--lime); }
+.site-footer .col a:hover { color: var(--periwinkle); }
 .site-footer .bottom {
   margin-top: 24px;
   display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; align-items: center;
@@ -583,7 +583,7 @@ section { padding: var(--pad-section) var(--pad-x); position: relative; }
   font-size: 0.96rem; color: var(--ink-soft);
 }
 .service-block .deliverables li::before {
-  content: "+"; color: var(--lime-deep); font-weight: 600; font-family: var(--mono); font-size: 0.85rem;
+  content: "+"; color: var(--mauve); font-weight: 600; font-family: var(--mono); font-size: 0.85rem;
 }
 .service-block h4 {
   font-family: var(--mono); font-size: 0.74rem; letter-spacing: 0.14em; text-transform: uppercase;
