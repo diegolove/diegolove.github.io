@@ -669,8 +669,15 @@ section { padding: var(--pad-section) var(--pad-x); position: relative; }
 .contact-form .submit-row { display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap; }
 .contact-form .small { font-family: var(--mono); font-size: 0.7rem; color: var(--ink-dim); letter-spacing: 0.06em; }
 
-.text-periwinkle {
-  color: var(--periwinkle);
+.dot-periwinkle::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-left: 8px;
+  background: var(--periwinkle);
+  border-radius: 50%;
+  vertical-align: middle;
 }
 
 /* ─── responsive ─── */
