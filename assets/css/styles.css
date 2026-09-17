@@ -35,7 +35,7 @@
   --rail: 240px;
   --rail-narrow: 64px;
   --pad-x: clamp(20px, 4vw, 56px);
-  --pad-section: clamp(80px, 9vw, 160px);
+  --pad-section: clamp(40px, 4vw, 80px);
   --container-narrow: 980px;
 
   /* fonts */
@@ -278,7 +278,7 @@ section { padding: var(--pad-section) var(--pad-x); position: relative; }
 /* ─── HERO ─── */
 .hero {
   min-height: calc(100vh - 0px);
-  padding: clamp(30px, 5vw, 60px) var(--pad-x) clamp(40px, 6vw, 80px);
+  padding: clamp(30px, 5vw, 60px) var(--pad-x) clamp(20px, 3vw, 40px);
   display: grid;
   grid-template-rows: auto 1fr auto;
   position: relative;
