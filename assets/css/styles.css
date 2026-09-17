@@ -278,20 +278,20 @@ section { padding: var(--pad-section) var(--pad-x); position: relative; }
 /* ─── HERO ─── */
 .hero {
   min-height: calc(100vh - 0px);
-  padding: clamp(60px, 10vw, 140px) var(--pad-x) clamp(40px, 6vw, 80px);
+  padding: clamp(30px, 5vw, 60px) var(--pad-x) clamp(40px, 6vw, 80px);
   display: grid;
   grid-template-rows: auto 1fr auto;
   position: relative;
 }
 .hero-meta {
   display: grid; grid-template-columns: 1fr auto auto auto;
-  gap: 32px;
+  /*gap: 32px;*/
   font-family: var(--mono); font-size: 0.74rem;
   letter-spacing: 0.1em; text-transform: uppercase;
   color: var(--ink-dim);
   border-bottom: 1px solid var(--ink-line);
   padding-bottom: 18px;
-  margin-bottom: clamp(50px, 7vw, 100px);
+  margin-bottom: clamp(30px, 2vw, 40px);
 }
 .hero-meta .periwinkle-tag { background: var(--periwinkle); color: var(--ink); padding: 4px 10px; border-radius: var(--radius-pill); letter-spacing: 0.08em; }
 
