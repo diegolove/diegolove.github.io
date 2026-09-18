@@ -698,7 +698,7 @@ section { padding: var(--pad-section) var(--pad-x); position: relative; }
   .rail { display: none; }
   .topbar { display: flex; }
   .hero { min-height: 0; }
-  .hero-marquee { margin-top: 20px; }
+  .hero-marquee { margin-top: 50px; }
   .hero-meta { display: none; }
   .hero-meta { grid-template-columns: 1fr 1fr; }
   .hero-meta > :nth-child(3), .hero-meta > :nth-child(4) { display: none; }
