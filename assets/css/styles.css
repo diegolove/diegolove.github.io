@@ -705,7 +705,7 @@ section { padding: var(--pad-section) var(--pad-x); position: relative; }
   .hero-meta > :nth-child(3), .hero-meta > :nth-child(4) { display: none; }
   .hero-bottom { display: block; grid-template-columns: 1fr; gap: 32px; }
   .hero-actions { justify-content: flex-start; }
-  .work-card:hover .img-wrap img { transform: scale(1.01); }
+  .work-card:hover .img-wrap img { transform: scale(1.005); }
   .work-strip { grid-template-columns: 1fr; }
   .work-strip .work-card.lg { grid-column: auto; }
   .work-grid { grid-template-columns: 1fr; gap: 40px 0; }
