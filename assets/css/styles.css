@@ -700,8 +700,7 @@ section { padding: var(--pad-section) var(--pad-x); position: relative; }
   .topbar { display: flex; }
   .hero { min-height: 0; }
   .hero-marquee { margin-top: 80px; }
-  .hero-meta { display: none; }
-  .hero-meta { grid-template-columns: 1fr 1fr; }
+  .hero-meta { display: flex; justify-content: space-between; }
   .hero-meta > :nth-child(3), .hero-meta > :nth-child(4) { display: none; }
   .hero-bottom { display: block; grid-template-columns: 1fr; gap: 32px; }
   .hero-actions { justify-content: flex-start; }
@@ -727,6 +726,9 @@ section { padding: var(--pad-section) var(--pad-x); position: relative; }
   .site-footer .bottom { grid-template-columns: 1fr; gap: 8px; }
   .site-footer .bottom > * { text-align: left !important; }
   section { padding: clamp(64px, 12vw, 100px) var(--pad-x); }
+}
+@media (max-width: 400px) {
+  .hero-meta { display: grid; grid-template-columns: 1fr; gap: 10px; }
 }
 
 /* ─── reveal animation (compositor friendly, no layout) ─── */
