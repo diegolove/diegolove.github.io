@@ -293,7 +293,7 @@ section { padding: var(--pad-section) var(--pad-x); position: relative; }
   padding-bottom: 18px;
   margin-bottom: clamp(10px, 1vw, 18px);
 }
-.hero-meta .periwinkle-tag { background: var(--periwinkle); color: var(--ink); padding: 4px 10px; border-radius: var(--radius-pill); letter-spacing: 0.08em; }
+.hero-meta .periwinkle-tag { display:block; background: var(--periwinkle); color: var(--ink); padding: 4px 10px; border-radius: var(--radius-pill); letter-spacing: 0.08em; }
 
 .hero-headline {
   font-size: var(--size-hero);
