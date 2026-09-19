@@ -556,7 +556,7 @@ section { padding: var(--pad-section) var(--pad-x); position: relative; }
   display: grid; grid-template-columns: repeat(2, 1fr); gap: 56px 32px;
 }
 .work-grid article {
-  display: flex; flex-direction: column; gap: 16px;
+  display: flex; flex-direction: column;
 }
 .work-grid .img-wrap {
   aspect-ratio: 4/3; background: var(--paper-soft); overflow: hidden; border-radius: var(--radius);
