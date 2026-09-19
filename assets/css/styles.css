@@ -373,14 +373,18 @@ section { padding: var(--pad-section) var(--pad-x); position: relative; }
 .work-card.sq .img-wrap img.square-focus { transform: scale(1.1); }
 .work-card.rect .img-wrap img.rectangle-focus { transform: scale(1.6); transform-origin: 55% 65%; }
 .work-card.patscubone .img-wrap { aspect-ratio: 5/6.2; }
-.work-card .img-wrap img.patscubone-focus { transform: scale(1.2); transform-origin: 55% 65%; }
+.work-card.fivesr .img-wrap { aspect-ratio: 5/5; }
+.work-card.masterchiefcubone .img-wrap { aspect-ratio: 5/6.2; }
 .work-card .img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s var(--ease); }
 .work-card .img-wrap img.gil-focus { object-position: 50% 18%; }
 .work-card .img-wrap img.ralliart-focus { object-position: 50% 65%; }
+.work-card .img-wrap img.patscubone-focus { transform: scale(1.2); transform-origin: 55% 65%; }
+.work-card .img-wrap img.masterchiefcubone-focus { transform: scale(2.3); transform-origin: 52.5% 51%; }
 .work-card:hover .img-wrap img { transform: scale(1.02); }
 .work-card.sq:hover .img-wrap img.square-focus { transform: scale(1.12); }
 .work-card.rect:hover .img-wrap img.rectangle-focus { transform: scale(1.62); }
 .work-card.patscubone:hover .img-wrap img.patscubone-focus { transform: scale(1.22); }
+.work-card.masterchiefcubone:hover .img-wrap img.masterchiefcubone-focus { transform: scale(2.32); }
 .work-card .body { padding: 22px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
 .work-card .body .meta {
   display: flex; gap: 10px; font-family: var(--mono); font-size: 0.74rem;
