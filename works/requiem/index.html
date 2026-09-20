@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0e0e0e" />
+  <title>Diego Love</title>
+  <meta name="description" content="Diego Love is a Boston based artist and developer, with a focus on on both digital and physical mediums." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" href="../../favicon.png" type="image/png" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="../../assets/css/styles.css" />
+</head>
+<body>
+  <div class="topbar">
+    <a class="brand" href="../index.html"><span class="rail-brand-mark">(!)</span>Diego Love</a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">Menu</button>
+  </div>
+  <nav class="mobile-nav" aria-label="Mobile">
+    <button class="mobile-close" aria-label="Close menu">Close ✕</button>
+    <a href="../../">Index</a>
+    <a class="dot-periwinkle"href="../">Works</a>
+    <a href="../../contact/">Contact</a>
+  </nav>
+
+  <div class="shell">
+    <aside class="rail" aria-label="Primary">
+      <a class="rail-brand" href="../../">
+        <span class="rail-brand-mark">(!)</span>
+        <span>Diego Love<span class="rail-brand-sub">Artist & Developer</span></span>
+      </a>
+      <nav class="rail-nav" aria-label="Sections">
+        <a href="../../">Index</a>
+        <a href="../" class="active">Works</a>
+        <!-- <a href="services.html">Services</a>
+        <a href="about.html">Studio</a> -->
+        <a href="../../contact">Contact</a>
+      </nav>
+      <div class="rail-foot">
+        <!-- <div class="meta-row"><span>Spring '26</span><span>Issue 14</span></div> -->
+        <!-- <div class="meta-row"><span class="rail-status">Works In Progress</span></div> -->
+        <div class="rail-socials">
+          <a href="https://www.instagram.com/supdeebo" aria-label="Instagram" target="_blank">IG</a>
+          <a href="https://github.com/diegolove" aria-label="GitHub" target="_blank">GIT</a>
+          <!--<a href="#" aria-label="LinkedIn">LI</a>-->
+        </div>
+        <div class="meta-row"><span>BOSTON</span></div>
+      </div>
+    </aside>
+
+    <div class="content">
+      <main>
+        <section class="page-hero" aria-labelledby="ph">
+          <p class="crumb"><!--Index → --><span style="color:var(--ink)">Works</span></p>
+          <h1 id="ph">Selected work, <em class="italic-display">2019 - present.</em></h1>
+          <p class="lede">A small archive. Twenty-some projects across various mediums.</p>
+        </section>
+
+        <div class="work-filters" role="toolbar" aria-label="Filter work">
+          <button data-filter="all" aria-pressed="true">All</button>
+          <button data-filter="physical" aria-pressed="false">Physical</button>
+          <button data-filter="digital" aria-pressed="false">Digital</button>
+          <button data-filter="comics" aria-pressed="false">Comics</button>
+          <!-- <button data-filter="editorial" aria-pressed="false">Editorial</button>
+          <button data-filter="campaign" aria-pressed="false">Campaign</button> -->
+        </div>
+
+        <section class="work-grid" aria-label="Project archive">
+          <article class="work-card lg" data-tags="digital,comics">
+            <div class="img-wrap">
+              <!-- Requiem -->
+              <img class="large-focus" src="../../assets/img/RequiemCover.png" alt="Réquiem - Volume 1 - Story & Art by Diego Love — A rusty orange robot standing proudly on a rickety hanging wooden bridge over a fast flowing river." loading="lazy"/>
+            </div>
+            <div class="body">
+              <div class="meta"><span>Manga</span><span>·</span><span>Digital</span><span>·</span><span>2026</span></div>
+              <div class="hero-meta">
+                <h3>Réquiem</h3>
+              </div>
+              <p>A love letter to identity and the changing world.</p>
+              <p>Vol. 1 Coming soon.</p>
+            </div>
+          </article>
+        </section>
+
+        <section class="cta-band" aria-labelledby="cta-head">
+          <div class="inner">
+            <h2 id="cta-head">Have a project that <em>should</em> exist?</h2>
+            <div class="right">
+              <p>No idea is too crazy.</p>
+              <a class="btn btn-ink" href="../../contact" style="margin-top: 24px;">Start a conversation <span class="arrow">→</span></a>
+              <div class="meta">
+                <span>DiegoLoveArt@gmail.com</span>
+                <!--<span>+1 (212) 555-0144</span>-->
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer" aria-labelledby="footer-head">
+        <h2 id="footer-head" class="visually-hidden" style="position:absolute;left:-9999px">Site footer</h2>
+        <div class="top">
+          <div class="brand-block">
+            <span class="mark"><span class="badge">(!)</span> Diego Love</span>
+            <p style="color:#b0afaa;margin:0;line-height:1.55;">A Boston based artist and developer, with a focus on both digital and physical media.</p>
+          </div>
+          <div class="col">
+            <h4>Studio</h4>
+            <a href="../../">Index</a>
+            <a href="../">Works</a>
+            <a href="../../contact">Contact</a>
+          </div>
+          <div class="col">
+            <h4>Practice</h4>
+            <a href="../../#Murals">Murals</a>
+            <a href="../../#StudioArt">Studio Art</a>
+            <a href="../../#DigitalArt">Digital Art</a>
+            <a href="../../#SequentialArt">Sequential Art</a>
+            <a href="../../#ArtDirection">Art Direction</a>
+            <a href="../../#WebAppDev">Web &amp; App Dev</a>
+          </div>
+          <div class="col">
+            <h4>Contact</h4>
+            <a href="https://www.instagram.com/supdeebo" target="_blank">Instagram</a>
+            <a href="https://github.com/diegolove" target="_blank">GitHub</a>
+            <a href="mailto:diegoloveart@gmail.com">DiegoLoveArt@gmail.com</a>
+          </div>
+        </div>
+        <div class="bottom">
+          <span>© <span data-year>2026</span> Diego Love</span>
+          <span class="center">BOSTON</span>
+          <span class="right">V1 · </span>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>
