@@ -358,7 +358,7 @@ section { padding: var(--pad-section) var(--pad-x); position: relative; }
   padding-left: 18px;
   padding-right: 18px;
 }
-.header .detail{
+.header .detail {
   display: grid; grid-template-columns: 1fr auto auto auto;
   font-family: var(--mono); font-size: 0.74rem;
   letter-spacing: 0.1em; text-transform: uppercase;
@@ -701,6 +701,7 @@ section { padding: var(--pad-section) var(--pad-x); position: relative; }
   .shell { grid-template-columns: 1fr; }
   .rail { display: none; }
   .topbar { display: flex; }
+  .header .detail { display: none }
   .hero { min-height: 0; }
   .hero-marquee { margin-top: 80px; }
   .hero-meta { display: flex; justify-content: space-between; }
