@@ -740,6 +740,7 @@ section { padding: var(--pad-section) var(--pad-x); position: relative; }
   .site-footer .bottom { grid-template-columns: 1fr; gap: 8px; }
   .site-footer .bottom > * { text-align: left !important; }
   section { padding: clamp(64px, 12vw, 100px) var(--pad-x); }
+  [id] { scroll-margin-top: 60px; }
 }
 @media (max-width: 400px) {
   .hero-meta { display: grid; grid-template-columns: 1fr; gap: 10px; }
