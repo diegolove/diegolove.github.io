@@ -59,6 +59,34 @@
     });
   }
 
+    const rightButton = document.querySelector('.right-arrow');
+  const leftButton = document.querySelector('.left-arrow');
+  const mainImage = document.querySelector('.large-focus');
+
+  if (rightButton && leftButton && mainImage) {
+    const images = [
+      "../../assets/img/RequiemCover.png",
+      "../../assets/img/RequiemNoCover.png",
+      "../../assets/img/RequiemZoom1.jpg"
+    ];
+
+    let currentIndex = 0;
+
+    const updateImage = () => {
+      mainImage.src = images[currentIndex];
+    };
+
+    rightButton.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % images.length;
+      updateImage();
+    });
+
+    leftButton.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      updateImage();
+    });
+  }
+
   // Year stamp in footer
   document.querySelectorAll('[data-year]').forEach((el) => { el.textContent = String(new Date().getFullYear()); });
 })();

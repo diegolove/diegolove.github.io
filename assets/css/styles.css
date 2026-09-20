@@ -415,34 +415,6 @@ section { padding: var(--pad-section) var(--pad-x); position: relative; }
 }
 .work-card .body .arrow-link:hover { color: var(--mauve); font-weight: 600; }
 
-/* ─── services list (numbered, NOT card grid) ─── */
-.services-list { border-top: 1px solid var(--ink); }
-.services-list .row {
-  display: grid; grid-template-columns: 80px 1fr 1.4fr auto;
-  gap: 32px;
-  padding: 36px 0;
-  align-items: start;
-  border-bottom: 1px solid var(--ink-line);
-  position: relative;
-  transition: padding 0.3s var(--ease), background 0.3s var(--ease);
-}
-.services-list .row:hover { background: var(--paper-soft); padding-left: 16px; padding-right: 16px; }
-.services-list .row .num {
-  font-family: var(--mono); color: var(--ink-dim);
-  font-size: 0.84rem; letter-spacing: 0.06em;
-}
-.services-list .row h3 {
-  font-family: var(--display); font-weight: 500;
-  font-size: clamp(1.4rem, 2vw, 2rem);
-  line-height: 1.05;
-  letter-spacing: -0.02em;
-}
-.services-list .row p { color: var(--ink-soft); margin: 0; max-width: 50ch; }
-.services-list .row .arrow {
-  font-size: 1.4rem; color: var(--ink); transition: transform 0.3s var(--ease), color 0.3s var(--ease);
-}
-.services-list .row:hover .arrow { transform: rotate(-45deg); color: var(--periwinkle); }
-
 /* ─── client logos marquee ─── */
 .clients-marquee {
   background: var(--paper-soft);
@@ -589,7 +561,7 @@ section { padding: var(--pad-section) var(--pad-x); position: relative; }
   display: flex; flex-direction: column;
 }
 .work-grid .img-wrap {
-  aspect-ratio: 4/3; background: var(--paper-soft); overflow: hidden; border-radius: var(--radius);
+  aspect-ratio: 4/3; background: var(--paper-soft); overflow: hidden; border-radius: var(--radius); position: relative;;
 }
 .work-grid .img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s var(--ease); }
 .work-grid article:hover .img-wrap img { transform: scale(1.02); }
@@ -597,50 +569,50 @@ section { padding: var(--pad-section) var(--pad-x); position: relative; }
 .work-grid h3 { font-size: 1.7rem; line-height: 1.05; }
 .work-grid p { color: var(--ink-soft); margin: 0; font-size: 0.96rem; max-width: 48ch; }
 
-/* ─── about page ─── */
-.about-story { padding: 64px var(--pad-x); }
-.about-story .grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 80px; align-items: start; }
-.about-story .img-wrap {
-  aspect-ratio: 4/5; background: var(--paper-soft);
-  border-radius: var(--radius); overflow: hidden; position: sticky; top: 32px;
+.work-card.lg:hover .pic-arrow-button {
+  opacity: 0.95;
+  pointer-events: auto;
 }
-.about-story p { font-size: 1.1rem; line-height: 1.55; color: var(--ink-soft); }
-.about-story p strong { color: var(--ink); font-weight: 600; }
-
-.team-grid {
-  display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px;
-  padding: 64px var(--pad-x);
+.pic-arrow-button {
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  background-color: #ccc;
+  border: none;
+  border-radius: 35%;
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.2s ease, background-color 0.2s ease;
+  z-index: 2;
 }
-.team-card { display: flex; flex-direction: column; gap: 14px; }
-.team-card .img-wrap { aspect-ratio: 4/5; background: var(--paper-soft); border-radius: var(--radius); overflow: hidden; }
-.team-card h3 { font-size: 1.3rem; line-height: 1.1; }
-.team-card .role { font-family: var(--mono); font-size: 0.74rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-dim); }
-.team-card p { font-size: 0.94rem; color: var(--ink-soft); margin-top: 8px; }
-
-.values-list { padding: 64px var(--pad-x); border-top: 1px solid var(--ink-line); }
-.values-list .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
-.values-list .v {
-  border-top: 1px solid var(--ink-line); padding-top: 24px;
-  display: flex; flex-direction: column; gap: 10px;
+.pic-arrow-button:hover {
+  background-color: var(--periwinkle);
 }
-.values-list .v .n { font-family: var(--mono); font-size: 0.74rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-dim); }
-.values-list .v h3 { font-size: 1.3rem; }
-.values-list .v p { color: var(--ink-soft); font-size: 0.96rem; margin: 0; }
-
-.awards { padding: 64px var(--pad-x); border-top: 1px solid var(--ink-line); }
-.awards-list {
-  display: grid; gap: 0; margin: 32px 0 0;
-  font-family: var(--mono); font-size: 0.84rem;
+.pic-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
 }
-.awards-list .row {
-  display: grid; grid-template-columns: 80px 1fr 1.6fr auto;
-  gap: 24px; padding: 18px 0; border-top: 1px solid var(--ink-line);
-  align-items: center;
+.pic-arrow-button.right-arrow {
+  right: 5px;
 }
-.awards-list .row .yr { color: var(--ink-dim); }
-.awards-list .row .name { color: var(--ink); font-weight: 500; }
-.awards-list .row .desc { color: var(--ink-soft); font-family: var(--sans); font-size: 0.94rem; }
-.awards-list .row .place { color: var(--ink-dim); letter-spacing: 0.06em; text-transform: uppercase; font-size: 0.74rem; }
+.right-arrow .pic-arrow {
+  left: 55%;
+  border-width: 10px 0 10px 15px;
+  border-color: transparent transparent transparent var(--paper);
+}
+.pic-arrow-button.left-arrow {
+  left: 5px;
+}
+.left-arrow .pic-arrow {
+  left: 45%;
+  border-width: 10px 15px 10px 0px;
+  border-color: transparent var(--paper) transparent transparent;
+}
 
 /* ─── contact page ─── */
 .contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 80px; padding: 64px var(--pad-x); }
